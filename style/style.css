@@ -1,0 +1,113 @@
+
+.container._centered {
+    width: 80%;
+    min-width: min-content;
+    max-width: 60px;
+    margin: auto;
+}
+
+main {
+    display: flex;
+}
+
+section {
+    padding-left: 10px;
+}
+
+section.right-side {
+    margin: 0;
+    padding-right: 15px;
+    padding-left: 0;
+    background: #e3e3e3;
+}
+
+.section-head {
+    padding: 5px;
+    margin: 5px 0;
+    margin-left: -10px;
+    background: #ffc107;
+    width: max-content;
+    color: black;
+}
+
+.me {
+    text-align: right;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: -15px;
+    padding: 5px 10px;
+    background: #ffc107;
+    width: 50%;
+}
+
+.me > h1 {
+    margin: 0;
+}
+
+aside {
+    background: black;
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+}
+
+.photo {
+    text-align: center;
+}
+
+.photo > img {
+    height: 200px;
+    padding: 10px;
+}
+
+section > span,
+code{
+    display: block;
+    margin-top: 5px;
+}
+
+code {
+    background: white;
+    min-width: 61ch;
+    margin: 5px 0 10px -50px;
+    padding: 5px;
+}
+
+.contact {
+    display: flex;
+}
+
+.contact > .type{
+    margin-right: 3px;
+    font-weight: bold;
+}
+
+ul {
+    margin: 0;
+    padding-left: 15px;
+}
+
+.period {
+    display: inline-block;
+    font-weight: bold;
+    min-width: 11ch;
+}
+
+.position {
+    font-style: italic;
+}
+
+footer {
+    background: #e3e3e3;
+    display: flex;
+    padding: 3px 10px;
+}
+
+footer img {
+    height: 14px;
+}
+
+footer a {
+    margin-left: auto;
+}
+
