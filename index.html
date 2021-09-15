@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Troitskiy Andrey</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="container _centered">
+
+        <main>
+            <aside>
+                <section class="photo"><img src="img/me.PNG" alt="Я"></section>
+                <section class="contacs">
+                    <div class="section-head"><span>Contact information</span></div>
+                    <div class="contact">
+                        <div class="type"><span>Phone:</span></div>
+                        <div class="value"><span>+7-912-669-7190</span></div>
+                    </div>
+                    <div class="contact">
+                        <div class="type"><span>E-mail:</span></div>
+                        <div class="value"><span>TroitskiyA@yandex.ru</span></div>
+                    </div>
+                    <div class="contact">
+                        <div class="type"><span>Telegram:</span></div>
+                        <div class="value"><span>@Troitskiy_Andrey</span></div>
+                    </div>
+                </section>
+                <section class="hard-skills">
+                    <div class="section-head"><span>Hard skills</span></div>
+
+                    <ul>
+                        <li>C# (basic level)</li>
+                        <li>JS + Jquery (basic level)</li>
+                        <li>Development CRM and ERP systems</li>
+                        <li>Building UI</li>
+                        <li>CorelDraw, PhotoShop</li>
+                    </ul>
+
+                </section>
+                <section class="soft-skills">
+                    <div class="section-head"><span>Soft skills</span></div>
+
+                    <ul>
+                        <li>B2 English</li>
+                        <li>Ability to fast learning</li>
+                        <li>Work for results</li>
+                    </ul>
+
+                </section>
+            </aside>
+            <section class="right-side">
+                <div class="me">
+                    <h1>Troitskiy Andrew</h1>
+                    <span class="info">09.07.1990/male/Russian</span>
+                </div>
+                <section class="target">
+                    <div class="section-head"><span>Pretented to be</span></div>
+                    <span>Junior Frontend Developer</span>
+                </section>
+                <section class="about">
+                    <div class="section-head"><span>Work Experience</span></div>
+                    <span>I’m a 31 years old person, who never stops learning something new.<br>By my 21 birthday a had my
+                        own advertising agency. For a long time it was my passion, but some day i’ve decided, that i
+                        must go further. I spend 3 years for create and improve a ERP system, witch can help me manage
+                        all of process.<br>During that i learned basic UI and development skills. For the last 2 years i’m
+                        studying different areas of IT and work for several projects to get as much experience as i can.<br>
+                        Since june of 2021 i’m living out of my country. Now it’s Georgia. Perhaps, next will be
+                        Morocco. Ability to discover the World is my priorate.</span>
+                </section>
+                <section class="jobs">
+                    <div class="section-head"><span>Work Experience</span></div>
+                    <ul>
+                        <li>
+                            <spaan class="period">2010 - today</spaan>
+                            <span class="company"><a href="https://rg-versal.ru/">RG Versal</a></span>
+                            <span class="position">SEO</span>
+                        </li>
+                        <li>
+                            <spaan class="period">2020</spaan>
+                            <span class="company"><a href="https://skybase.ru/">SkyBase</a></span>
+                            <span class="position">UI analyst</span>
+                        </li>
+                        <li>
+                            <spaan class="period">2020 - 2021</spaan>
+                            <span class="company">Freelance</span>
+                            <span class="position">UI &amp; CRM analyst</span>
+                        </li>
+                        <li>
+                            <spaan class="period">2021 - today</spaan>
+                            <span class="company"><a href="https://skybase.ru/">SkyBase</a></span>
+                            <span class="position">Frontend Developer</span>
+                        </li>
+                    </ul>
+                </section>
+                <section class="code-example">
+                    <div class="section-head">
+                        <span>Code example</span>
+                    </div>
+                    <span>Task: A Narcissistic Number is a positive number which is the sum of its own
+                            digits, each raised to the power of the number of digits in a given base. Your code must
+                            return true or false depending upon whether the given number is a Narcissistic number in
+                            base 10.</span>
+                    <div class="solution">
+                        <code>function narcissistic(value) { <br> 
+                              let list = String(value).split(""); <br> 
+                              let summ = list.reduce(function(previousValue, currentValue){<br> return previousValue + currentValue ** list.length<br>}, 0);<br>
+                              return summ == value; 
+                            }
+                        </code>
+                    </div>
+                </section>
+            </section>
+        </main>
+        <footer>
+            <span>@TroitskiyAndrew</span>
+            <a class="school" href="https://rs.school/js/"><img src="img/rs_school_js.svg" alt="rs.school" ></a>
+        </footer>
+    </div>
+</body>
+
+</html>
