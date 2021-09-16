@@ -9,119 +9,186 @@
 
 <body>
     <div class="container _centered">
-
-        <main>
-            <aside>
-                <section class="photo"><img src="img/me.PNG" alt="Я"></section>
-                <section class="contacs">
-                    <div class="section-head"><span>Contact information</span></div>
-                    <div class="contact">
-                        <div class="type"><span>Phone:</span></div>
-                        <div class="value"><span>+7-912-669-7190</span></div>
-                    </div>
-                    <div class="contact">
-                        <div class="type"><span>E-mail:</span></div>
-                        <div class="value"><span>TroitskiyA@yandex.ru</span></div>
-                    </div>
-                    <div class="contact">
-                        <div class="type"><span>Telegram:</span></div>
-                        <div class="value"><span>@Troitskiy_Andrey</span></div>
-                    </div>
-                </section>
-                <section class="hard-skills">
-                    <div class="section-head"><span>Hard skills</span></div>
-
-                    <ul>
-                        <li>C# (basic level)</li>
-                        <li>JS + Jquery (basic level)</li>
-                        <li>Development CRM and ERP systems</li>
-                        <li>Building UI</li>
-                        <li>CorelDraw, PhotoShop</li>
-                    </ul>
-
-                </section>
-                <section class="soft-skills">
-                    <div class="section-head"><span>Soft skills</span></div>
-
-                    <ul>
-                        <li>B2 English</li>
-                        <li>Ability to fast learning</li>
-                        <li>Work for results</li>
-                    </ul>
-
-                </section>
-            </aside>
-            <section class="right-side">
-                <div class="me">
-                    <h1>Troitskiy Andrew</h1>
-                    <span class="info">09.07.1990/male/Russian</span>
+        <header id="start">
+            <div class="content">
+                <img src="img/me.PNG" alt="Я">
+                <div class="right">
+                    <h1>Troitskiy Andrey</h1>
+                    <p>09.07.1990/male/Russian</p>
+                    <p>Junior Frontend Developer</p>
                 </div>
-                <section class="target">
-                    <div class="section-head"><span>Pretented to be</span></div>
-                    <span>Junior Frontend Developer</span>
-                </section>
-                <section class="about">
-                    <div class="section-head"><span>Work Experience</span></div>
-                    <span>I’m a 31 years old person, who never stops learning something new.<br>By my 21 birthday a had my
-                        own advertising agency. For a long time it was my passion, but some day i’ve decided, that i
-                        must go further. I spend 3 years for create and improve a ERP system, witch can help me manage
-                        all of process.<br>During that i learned basic UI and development skills. For the last 2 years i’m
-                        studying different areas of IT and work for several projects to get as much experience as i can.<br>
-                        Since june of 2021 i’m living out of my country. Now it’s Georgia. Perhaps, next will be
-                        Morocco. Ability to discover the World is my priorate.</span>
-                </section>
-                <section class="jobs">
-                    <div class="section-head"><span>Work Experience</span></div>
+            </div>
+
+        </header>
+        <main>
+            <nav>
+                <ul>
+                    <li><a href="#start"><i></i><span>Start</span></a></li>
+                    <li><a href="#about"><i></i><span>About me</span></a></li>
+                    <li><a href="#skills"><i></i><span>Skills</span></a></li>
+                    <li><a href="#experience"><i></i><span>Experience</span></a></li>
+                    <li><a href="#projects"><i></i><span>Projects</span></a></li>
+                    <li><a href="#code-example"><i></i><span>Code-example</span></a></li>
+                    <li><a href="#contacts"><i></i><span>Contacts</span></a></li>
+                </ul>
+            </nav>
+            <section id="about">
+                <h2>About me</h2>
+                <div class="content">
+                    <div id="textAbout">I’m a 31 years old person, who never stops learning something new. <br>
+                        By my 21 birthday a had my own advertising agency. For a long time it was my passion, but some
+                        day i’ve decided, that i must go further. I spend 3 years for create and upgrade a ERP system,
+                        witch can help me manage all of process without any personal presence. <br>
+                        During that i've got basic UI and development skills. For the last 2 years i’m studying
+                        different areas of IT and working for several projects to get as much experience as i can.
+                        Since june of 2021 i’m living out of my country. Now i'm in Georgia. Perhaps, next point will be
+                        Morocco. Ability to discover the World is my priorate.
+                    </div>
+                    <p>You can watch my short self-presentation</p>
+                    <iframe src="https://www.youtube.com/embed/hXrwtin3n28" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </section>
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="content">
+                    <div id="hard-skills">
+                        <h3>Hard skills</h3>
+                        <ul>
+                            <li><span class="skill">C#</span>
+                                <div class="level-holder">
+                                    <div class="level _10"></div>
+                                </div>
+                            </li>
+                            <li><span class="skill">JS, CSS, HTML</span>
+                                <div class="level-holder">
+                                    <div class="level _30"></div>
+                                </div>
+                            </li>
+                            <li><span class="skill">design CRM/ERP</span>
+                                <div class="level-holder">
+                                    <div class="level _80"></div>
+                                </div>
+                            </li>
+                            <li><span class="skill">design UI</span>
+                                <div class="level-holder">
+                                    <div class="level _30"></div>
+                                </div>
+                            </li>
+                            <li><span class="skill">CorelDraw, PhotoShop</span>
+                                <div class="level-holder">
+                                    <div class="level _70"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="soft-skills">
+                        <h3>Soft skills</h3>
+                        <ul>
+                            <li><span class="skill">Ability to fast learning</span>
+                            </li>
+                            <li><span class="skill">Work for results</span>
+                            </li>
+                            <li><span class="skill">Sociability</span>
+                            </li>
+                            <li><span class="skill">Systems thinking</span>
+                            </li>
+                            <li><span class="skill">English B2</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="experience">
+                <h2>Experience</h2>
+                <div class="content">
+
                     <ul>
                         <li>
-                            <spaan class="period">2010 - 2019</spaan>
-                            <span class="company"><a href="https://rg-versal.ru/">RG Versal</a></span>
-                            <span class="position">Executive Director</span>
+                            <div class="period"><span>2010 - 2019</span></div>
+                            <div class="job-item">
+                                <span class="company"><a href="https://rg-versal.ru/" target="_blank">RG Versal</a></span>
+                                <span class="position">Executive Director</span>
+                            </div>
+                            <div class="description"> Что я там делал</div>
                         </li>
                         <li>
-                            <spaan class="period">2019 - 2020</spaan>
-                            <span class="company"><a href="https://skybase.ru/">SkyBase</a></span>
-                            <span class="position">UI analyst</span>
+                            <div class="period"><span>2019 - 2020</span></div>
+                            <div class="job-item">
+                                <span class="company"><a href="https://skybase.ru/" target="_blank">SkyBase</a></span>
+                                <span class="position">UI analyst</span>
+                            </div>
+                            <div class="description">Что я там делал</div>
                         </li>
                         <li>
-                            <spaan class="period">2020</spaan>
-                            <span class="company">Startup</span>
-                            <span class="position">building WebApp for Teplosuppliers</span>
+                            <div class="period"><span>2020</span></div>
+                            <div class="job-item">
+                                <span class="company">Startup</span>
+                                <span class="position">Founder</span>
+                            </div>
+                            <div class="description">ДЕлал вещи</div>
                         </li>
                         <li>
-                            <spaan class="period">2020 - 2021</spaan>
-                            <span class="company">Freelance</span>
-                            <span class="position">UI &amp; CRM analyst</span>
+                            <div class="period"><span>2020 - 2021</span></div>
+                            <div class="job-item">
+                                <span class="company">Freelance</span>
+                                <span class="position">CRM architect</span>
+                            </div>
+                            <div class="description">Чего достиг</div>
                         </li>
                         <li>
-                            <spaan class="period">2021 - today</spaan>
-                            <span class="company"><a href="https://skybase.ru/">SkyBase</a></span>
-                            <span class="position">Frontend Developer</span>
+                            <div class="period"><span>2021 - today</span></div>
+                            <div class="job-item">
+                                <span class="company"><a href="https://skybase.ru/" target="_blank">SkyBase</a></span>
+                                <span class="position">Frontend Developer</span>
+                            </div>
+                            <div class="description">Чего достиг</div>
                         </li>
                     </ul>
-                </section>
-                <section class="code-example">
-                    <div class="section-head">
-                        <span>Code example</span>
+
+                </div>
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="content">
+                    <div class="project">
+                        <a href=""><img src="" alt=""></a>
+                        <h3></h3>
+                        <span></span>
                     </div>
-                    <span>Task: A Narcissistic Number is a positive number which is the sum of its own
-                            digits, each raised to the power of the number of digits in a given base. Your code must
-                            return true or false depending upon whether the given number is a Narcissistic number in
-                            base 10.</span>
-                    <div class="solution">
-                        <code>function narcissistic(value) { <br> 
-                              let list = String(value).split(""); <br> 
-                              let summ = list.reduce(function(previousValue, currentValue){<br> return previousValue + currentValue ** list.length<br>}, 0);<br>
-                              return summ == value; 
-                            }
-                        </code>
+                    <div class="project">
+                        <a href=""><img src="" alt=""></a>
+                        <h3></h3>
+                        <span></span>
                     </div>
-                </section>
+                </div>
+            </section>
+            <section id="code-example">
+                <h2>Code Example</h2>
+                <div class="content">
+                    <div class="task">
+                        <h3>Task</h3>
+                        <span></span>
+                    </div>
+                    <div class="code">
+                        <span></span>
+                    </div>
+                </div>
+            </section>
+            <section id="contacts">
+                <h2>Contact information</h2>
+                <div class="content">
+                    <div class="contact"><i></i><span></span></div>
+                    <div class="contact"><i></i><span></span></div>
+                    <div class="contact"><i></i><span></span></div>
+                    <div class="contact"><i></i><span></span></div>
+                </div>
             </section>
         </main>
         <footer>
             <span>@TroitskiyAndrew</span>
-            <a class="school" href="https://rs.school/js/"><img src="img/rs_school_js.svg" alt="rs.school" ></a>
+            <a class="school" href="https://rs.school/js/"><img src="img/rs_school_js.svg" alt="rs.school"></a>
         </footer>
     </div>
 </body>
