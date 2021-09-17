@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <title>Troitskiy Andrey</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/an-old-hope.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -21,37 +28,36 @@
 
         </header>
         <main>
-            <nav>
-                <ul>
-                    <li><a href="#start"><i></i><span>Start</span></a></li>
-                    <li><a href="#about"><i></i><span>About me</span></a></li>
-                    <li><a href="#skills"><i></i><span>Skills</span></a></li>
-                    <li><a href="#experience"><i></i><span>Experience</span></a></li>
-                    <li><a href="#projects"><i></i><span>Projects</span></a></li>
-                    <li><a href="#code-example"><i></i><span>Code-example</span></a></li>
-                    <li><a href="#contacts"><i></i><span>Contacts</span></a></li>
-                </ul>
-            </nav>
+            <aside>
+                <nav>
+                    <ul>
+                        <li><a href="#start"><i class="fas fa-step-backward"></i><span>Start</span></a></li>
+                        <li><a href="#about"><i class="fas fa-user"></i><span>About me</span></a></li>
+                        <li><a href="#skills"><i class="fas fa-user-ninja"></i><span>Skills</span></a></li>
+                        <li><a href="#experience"><i class="far fa-id-card"></i><span>Experience</span></a></li>
+                        <li><a href="#projects"><i class="fas fa-tasks"></i><span>Projects</span></a></li>
+                        <li><a href="#code-example"><i class="fas fa-code"></i><span>Code-example</span></a></li>
+                        <li><a href="#contacts"><i class="far fa-envelope"></i><span>Contacts</span></a></li>
+                    </ul>
+                </nav>
+
+            </aside>
             <section id="about">
-                <h2>About me</h2>
+                <div class="section-head"><h2>About me</h2></div>
                 <div class="content">
                     <div id="textAbout">I’m a 31 years old person, who never stops learning something new. <br>
                         By my 21 birthday a had my own advertising agency. For a long time it was my passion, but some
                         day i’ve decided, that i must go further. I spend 3 years for create and upgrade a ERP system,
                         witch can help me manage all of process without any personal presence. <br>
                         During that i've got basic UI and development skills. For the last 2 years i’m studying
-                        different areas of IT and working for several projects to get as much experience as i can.
+                        different areas of IT and working for several projects to get as much experience as i can. <br>
                         Since june of 2021 i’m living out of my country. Now i'm in Georgia. Perhaps, next point will be
                         Morocco. Ability to discover the World is my priorate.
                     </div>
-                    <p>You can watch my short self-presentation</p>
-                    <iframe src="https://www.youtube.com/embed/hXrwtin3n28" title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
                 </div>
             </section>
             <section id="skills">
-                <h2>Skills</h2>
+                <div class="section-head"><h2>Skills</h2></div>
                 <div class="content">
                     <div id="hard-skills">
                         <h3>Hard skills</h3>
@@ -86,6 +92,8 @@
                     <div id="soft-skills">
                         <h3>Soft skills</h3>
                         <ul>
+                            <li><span class="skill">English B2</span>
+                            </li>
                             <li><span class="skill">Ability to fast learning</span>
                             </li>
                             <li><span class="skill">Work for results</span>
@@ -94,14 +102,12 @@
                             </li>
                             <li><span class="skill">Systems thinking</span>
                             </li>
-                            <li><span class="skill">English B2</span>
-                            </li>
                         </ul>
                     </div>
                 </div>
             </section>
             <section id="experience">
-                <h2>Experience</h2>
+                <div class="section-head"><h2>Experience</h2></div>
                 <div class="content">
 
                     <ul>
@@ -111,7 +117,9 @@
                                 <span class="company"><a href="https://rg-versal.ru/" target="_blank">RG Versal</a></span>
                                 <span class="position">Executive Director</span>
                             </div>
-                            <div class="description"> Что я там делал</div>
+                            <div class="description"> As a co-owner of the company, I performed a large number of functions in the early stages. From bookkeeping to sales.<br> Over time, I concentrated on optimizing all business processes and building an effective work system for each employee.
+                                The main achievement is the upgrade of a simple CRM system to a full-fledged ERP system. The introduction of this system allowed us to implement huge projects with the help of a small team.
+                                <br>And now I can control the work of the company remotely without losing productivity.</div>
                         </li>
                         <li>
                             <div class="period"><span>2019 - 2020</span></div>
@@ -119,7 +127,7 @@
                                 <span class="company"><a href="https://skybase.ru/" target="_blank">SkyBase</a></span>
                                 <span class="position">UI analyst</span>
                             </div>
-                            <div class="description">Что я там делал</div>
+                            <div class="description">SkyBase is a platform for creating business applications. On it, I built an ERP system for my company, during which the owner of the platform taught me the basics of design and programming. He brought me in as a user interface and business process consultant. I was engaged in automation of billing system and improvement of the user's control point.</div>
                         </li>
                         <li>
                             <div class="period"><span>2020</span></div>
@@ -127,7 +135,8 @@
                                 <span class="company">Startup</span>
                                 <span class="position">Founder</span>
                             </div>
-                            <div class="description">ДЕлал вещи</div>
+                            <div class="description">I made a web application for a heat supply company. The application stored a database of all connected objects, calculated consumption, issued invoices, controlled payments and organized the process of judicial collection of debts.
+                                <br>Unfortunately, my client was unable to start using the App for political reasons.</div>
                         </li>
                         <li>
                             <div class="period"><span>2020 - 2021</span></div>
@@ -135,7 +144,7 @@
                                 <span class="company">Freelance</span>
                                 <span class="position">CRM architect</span>
                             </div>
-                            <div class="description">Чего достиг</div>
+                            <div class="description">I was engaged in the design of CRM systems, as well as setting up integration with external systems. IP telephony, Roistat, Telegram and others.</div>
                         </li>
                         <li>
                             <div class="period"><span>2021 - today</span></div>
@@ -143,47 +152,60 @@
                                 <span class="company"><a href="https://skybase.ru/" target="_blank">SkyBase</a></span>
                                 <span class="position">Frontend Developer</span>
                             </div>
-                            <div class="description">Чего достиг</div>
+                            <div class="description">I began not just to describe how the interface elements should look and work, but also to make them. I make interfaces for selection, working with tables and data.</div>
                         </li>
                     </ul>
 
                 </div>
             </section>
             <section id="projects">
-                <h2>Projects</h2>
+                <div class="section-head"><h2>Projects</h2></div>
                 <div class="content">
-                    <div class="project">
-                        <a href=""><img src="" alt=""></a>
-                        <h3></h3>
-                        <span></span>
-                    </div>
-                    <div class="project">
-                        <a href=""><img src="" alt=""></a>
-                        <h3></h3>
-                        <span></span>
-                    </div>
+                    <article class="project">
+                        <a href="https://rolling-scopes-school.github.io/troitskiyandrew-JSFEPRESCHOOL/whack-a-mole/index" target="_blank"><img src="img/wildWest.png" alt="WildWest"></a>
+                        <h3>Wild West</h3>
+                        <span>
+                            Wild West is a small reaction and attentiveness game. The goal is to score as many points as possible by killing bandits and rescuing civilians.
+                            <br>I used animation to create the movement of the characters and connected the soundtrack.
+                            <br>I use the randomizer to determine where the character will spawn and make one aspect of the game harder after each level up.
+                            <br>The best account is kept in LocalStorage</span>
+                    </article>
+                    <article class="project">
+                        <a href="https://rolling-scopes-school.github.io/troitskiyandrew-JSFEPRESCHOOL/Drum%20Kit/" target="_blank"><img src="img/dram.png" alt="Dram"></a>
+                        <h3>Dram</h3>
+                        <span>Drum is a small application that plays drum sounds when you press certain keys.
+                            <br>I used various visual effects to style the buttons.
+                            <br>The sound playback algorithm is quite flexible and allows you to quickly expand the capabilities of the application.</span>
+                    </article>
                 </div>
             </section>
             <section id="code-example">
-                <h2>Code Example</h2>
+                <div class="section-head"><h2>Code Example</h2></div>
                 <div class="content">
                     <div class="task">
-                        <h3>Task</h3>
-                        <span></span>
+                        <p>Task</p>
+                        <span>A Narcissistic Number is a positive number which is the sum of its own digits, each raised to the power of the number of digits in a given base. Your code must return true or false depending upon whether the given number is a Narcissistic number in base 10.</span>
                     </div>
                     <div class="code">
-                        <span></span>
+                        <pre><code class="language-javascript hljs">function narcissistic(value) {
+    let list = String(value).split("");
+    let summ = list.reduce(function(previousValue, currentValue){
+        return previousValue + currentValue ** list.length
+    }, 0);
+    return summ === value; 
+}</code>
+                        </pre>
                     </div>
                 </div>
             </section>
             <section id="contacts">
-                <h2>Contact information</h2>
-                <div class="content">
-                    <div class="contact"><i></i><span></span></div>
-                    <div class="contact"><i></i><span></span></div>
-                    <div class="contact"><i></i><span></span></div>
-                    <div class="contact"><i></i><span></span></div>
-                </div>
+                <div class="section-head"><h2>Contact information</h2></div>
+                <ul class="content">
+                    <li class="contact"><i class="fas fa-mobile-alt"></i><span>+7 912-669-7190</span></li>
+                    <li class="contact"><i class="far fa-envelope"></i><span>TroitskiyA@yandex.ru</span></li>
+                    <li class="contact"><i class="fab fa-telegram-plane"></i><span><a href="https://t.me/Troitskiy_Andrey" target="_blank">@Troitskiy_Andrey</a></span></li>
+                    <li class="contact"><i class="fab fa-github"></i><span><a href="https://github.com/TroitskiyAndrew" target="_blank">TroitskiyAndrew</a></span></li>
+                </ul>
             </section>
         </main>
         <footer>

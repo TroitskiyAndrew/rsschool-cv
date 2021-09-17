@@ -1,23 +1,74 @@
+:root{
+    --yellow-color: #f7e62a;
+    --grey-color: #e3e3e3
+}
+
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    background: var(--grey-color);
+    font-family: Roboto;
+    line-height: 1.5;
 }
 
 .container._centered {
     width: 80%;
     min-width: 300px;
     margin: auto;
+    background: white;
+    padding: 10px 30px;
+    box-shadow: 0px 0px 6px 2px rgb(0 0 0 / 34%);
+
 }
 
 nav {
     position: fixed;
-    top: 0;
+    top: 30px;
     left: 0;
+    background-color: var(--yellow-color);
+    padding: 10px;
+    box-shadow: 3px 3px 4px 1px rgb(0 0 0 / 34%);
+}
+
+
+
+nav li a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 30px;
+}
+
+nav li a > *{
+    color: black;
+}
+
+nav span {
+    display: none;
+}
+
+nav:hover span {
+    display: block;
+}
+
+nav i {
+    min-width: 25px;
+    text-align: center;
 }
 
 .content {
     display: flex;
     flex-wrap: wrap;
     margin: 25px 0;
+}
+
+.section-head {
+    background: var(--yellow-color);
+    margin-left: -30px;
+    padding: 0 30px;
+    width: max-content;
 }
 
 header .content {
@@ -32,12 +83,20 @@ h1 {
     margin: 0;
 }
 
+p {
+    margin: 0;
+}
+
 ul {
     padding: 0;
 }
 
 li {
     list-style-type: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 header img{
@@ -62,7 +121,11 @@ header img{
 
 
 #skills .content {
-    justify-content: space-around;
+    gap: 100px;
+}
+
+#skills li{
+    margin: 5px 0;
 }
 
 #hard-skills li {
@@ -75,8 +138,8 @@ header img{
     width: 120px;
     height: 10px;
     border-radius: 5px;
-    background-color: rgb(219 215 215);
-    border: 1px solid #5a5454;
+    background-color:  var(--grey-color);
+    border: 1px solid black;
 }
 
 .level-holder > .level{
@@ -110,6 +173,7 @@ header img{
     align-items: flex-start;
     border-bottom: 1px solid rgba(128, 128, 128, 0.349);
     padding-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 #experience li:last-child {
@@ -124,6 +188,10 @@ header img{
     min-width: 20ch;
 }
 
+#experience li > .job-item > .position{
+    font-style: italic;
+}
+
 #experience li > .job-item > *{
     display: block;
 }
@@ -132,11 +200,48 @@ header img{
     margin-left: 15px;
 }
 
+#projects .content{
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+#projects .project{
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    min-width: 340px;
+    box-shadow: 0px 0px 6px 2px rgb(0 0 0 / 34%);
+    padding: 10px;
+}
+
+#projects .project > a{
+    align-self: center;
+}
+
+#projects img{
+    width: 300px;
+}
+
+#contacts > .content{
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 
 footer {
-    background: #e3e3e3;
+    background:  var(--grey-color);
     display: flex;
     padding: 3px 10px;
+    height: 25px;
+    padding: 3px 10px;
+    margin: 0 -30px -10px -30px;
+    align-items: center;
 }
 
 footer img {
