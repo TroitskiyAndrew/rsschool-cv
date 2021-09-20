@@ -1,2 +1,4 @@
 # rsschool-cv
-https://troitskiyandrew.github.io/rsschool-cv/cv
+
+https://troitskiyandrew.github.io/rsschool-cv/index.html
+
