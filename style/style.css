@@ -24,17 +24,26 @@ body {
 }
 
 nav {
-    position: fixed;
-    top: 30px;
-    left: 0;
+    position: sticky;
+    top: 0;
     background-color: var(--yellow-color);
     padding: 10px;
-    box-shadow: 3px 3px 4px 1px rgb(0 0 0 / 34%);
+    margin: -10px -30px 0 -30px;
+    text-align: end;
+}
+
+nav > i.fa-bars{
+    display: none;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
 }
 
 
-
-nav li a{
+nav li a {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -45,17 +54,25 @@ nav li a > *{
     color: black;
 }
 
-nav span {
-    display: none;
-}
-
-nav:hover span {
-    display: block;
-}
-
 nav i {
     min-width: 25px;
     text-align: center;
+}
+
+@media (max-width: 800px) {
+    nav > ul {
+        display: none;
+    }
+
+    nav:not(:hover) > i{
+        display: inline-block;
+    }
+
+    nav:hover > ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
 }
 
 .content {
@@ -181,11 +198,11 @@ header img{
 }
 
 #experience li > .period{
-    min-width: 12ch;
+    min-width: 20%;
 }
 
 #experience li > .job-item{
-    min-width: 20ch;
+    min-width: 20%;
 }
 
 #experience li > .job-item > .position{
@@ -198,6 +215,7 @@ header img{
 
 #experience li > .description{
     margin-left: 15px;
+    width: 60%;
 }
 
 #projects .content{
@@ -210,7 +228,7 @@ header img{
     display: flex;
     flex-direction: column;
     max-width: 40%;
-    min-width: 340px;
+    min-width: 280px;
     box-shadow: 0px 0px 6px 2px rgb(0 0 0 / 34%);
     padding: 10px;
 }
@@ -220,7 +238,13 @@ header img{
 }
 
 #projects img{
-    width: 300px;
+    width: 280px;
+}
+
+@media (max-width: 600px) {
+    .code {
+        max-width: 300px;
+    }
 }
 
 #contacts > .content{
@@ -250,6 +274,27 @@ footer img {
 
 footer a {
     margin-left: auto;
+}
+
+@media (max-width: 400px) {
+    .container._centered {
+        padding-left: 5px;
+        padding-right: 5px;
+    
+    }
+
+    nav {
+        margin: -10px -5px 0 -5px;
+    }
+
+    .section-head {
+        margin-left: -5px;
+        padding-left: 5px;
+    }
+
+    footer {
+        margin: 0 -5px -10px -5px;
+    }
 }
 
 
