@@ -1,0 +1,302 @@
+:root{
+    --yellow-color: #f7e62a;
+    --grey-color: #e3e3e3
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--grey-color);
+    font-family: Roboto;
+    line-height: 1.5;
+}
+
+.container._centered {
+    width: 80%;
+    min-width: 300px;
+    margin: auto;
+    background: white;
+    padding: 10px 30px;
+    box-shadow: 0px 0px 6px 2px rgb(0 0 0 / 34%);
+
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: var(--yellow-color);
+    padding: 10px;
+    margin: -10px -30px 0 -30px;
+    text-align: end;
+}
+
+nav > i.fa-bars{
+    display: none;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+
+
+nav li a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 30px;
+}
+
+nav li a > *{
+    color: black;
+}
+
+nav i {
+    min-width: 25px;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    nav > ul {
+        display: none;
+    }
+
+    nav:not(:hover) > i{
+        display: inline-block;
+    }
+
+    nav:hover > ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+.section-head {
+    background: var(--yellow-color);
+    margin-left: -30px;
+    padding: 0 30px;
+    width: max-content;
+}
+
+header .content {
+    justify-content: space-between;
+}
+
+.right {
+    text-align: right;
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header img{
+    height: 150px;
+}
+
+#about .content {
+    flex-direction: column;
+}
+
+#about > .content > iframe{
+    width: 560px;
+    height: 315px;
+    align-self: center;
+
+}
+
+#textAbout{
+    margin-bottom: 10px;
+}
+
+
+
+#skills .content {
+    gap: 100px;
+}
+
+#skills li{
+    margin: 5px 0;
+}
+
+#hard-skills li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#hard-skills li > .level-holder{
+    margin-left: 10px;
+    width: 120px;
+    height: 10px;
+    border-radius: 5px;
+    background-color:  var(--grey-color);
+    border: 1px solid black;
+}
+
+.level-holder > .level{
+    height: 10px;
+    border-radius: 5px;
+    background-color: rgb(31, 250, 49);
+}
+
+.level._10 {
+    width: 10%;
+}
+
+.level._30 {
+    width: 30%;
+}
+
+.level._70 {
+    width: 70%;
+}
+
+.level._80 {
+    width: 80%;
+}
+
+#experience ul {
+    width: 100%;
+}
+
+#experience li {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.349);
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+#experience li:last-child {
+    border-bottom: none;
+}
+
+#experience li > .period{
+    min-width: 20%;
+}
+
+#experience li > .job-item{
+    min-width: 20%;
+}
+
+#experience li > .job-item > .position{
+    font-style: italic;
+}
+
+#experience li > .job-item > *{
+    display: block;
+}
+
+#experience li > .description{
+    margin-left: 15px;
+    width: 60%;
+}
+
+#projects .content{
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+#projects .project{
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    min-width: 280px;
+    box-shadow: 0px 0px 6px 2px rgb(0 0 0 / 34%);
+    padding: 10px;
+}
+
+#projects .project > a{
+    align-self: center;
+}
+
+#projects img{
+    width: 280px;
+}
+
+@media (max-width: 620px) {
+    .code {
+        max-width: 300px;
+    }
+}
+
+#contacts > .content{
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+footer {
+    background:  var(--grey-color);
+    display: flex;
+    padding: 3px 10px;
+    height: 25px;
+    padding: 3px 10px;
+    margin: 0 -30px -10px -30px;
+    align-items: center;
+}
+
+footer img {
+    height: 14px;
+}
+
+footer a {
+    margin-left: auto;
+}
+
+@media (max-width: 400px) {
+    .container._centered {
+        padding-left: 5px;
+        padding-right: 5px;
+    
+    }
+
+    nav {
+        margin: -10px -5px 0 -5px;
+    }
+
+    .section-head {
+        margin-left: -5px;
+        padding-left: 5px;
+    }
+
+    footer {
+        margin: 0 -5px -10px -5px;
+    }
+}
+
+
+  
+  
